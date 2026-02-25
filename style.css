@@ -16,6 +16,8 @@
 
     --letter-spacing: 0px;
 
+    --line-height: 150%;
+
     --space-300: 24px;
     --space-120: 12px;
     --space-100: 8px;
@@ -44,5 +46,71 @@ body {
 
 #container {
     background-color: var(--color-white);
+    padding: var(--space-300);
+    width: fit-content;
+    border-radius: 20px;
+    width: 384px;
+    height: auto;
+    min-height: 522px;
+}
 
+img {
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 0px;
+}
+
+#learn {
+    background-color: var(--color-yellow);
+    color: var(--color-gray-950);
+    font-family: var(--font-preset3-bold);
+    width: fit-content;
+    padding:  var(--space-50) var(--space-120);
+    border-radius: var(--space-50);
+    font-weight: bold;
+    margin: var(--space-120) 0;
+    line-height: var(--line-height);
+}
+
+#heading {
+    font-family: var(--font-preset1);
+    font-size: var(--font-size-preset1);
+    font-weight: bold;
+    color: var(--color-gray-950);
+    margin: var(--space-120) 0;
+    line-height: var(--line-height);
+}
+#date {
+    font-family: var(--font-preset3);
+    color: var(--color-gray-950);
+    margin: var(--space-120) 0;
+    line-height: var(--line-height);
+}
+
+#text {
+    font-family: var(--font-preset2);
+    color: var(--color-gray-500);
+    margin: var(--space-120) 0;
+    line-height: var(--line-height);
+}
+
+#author img {
+    width: 32px;
+    height: 32px;
+}
+
+#name {
+    color: var(--color-gray-950);
+    font-family: var(--font-preset3-bold);
+    font-weight: bold;
+    line-height: var(--line-height);
+}
+
+#author {
+    width: fit-content;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px
 }
