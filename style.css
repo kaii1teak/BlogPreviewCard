@@ -1,13 +1,13 @@
-:root  {
+:root {
     --color-yellow: #F4D04E;
     --color-gray-950: #111111;
     --color-gray-500: #6B6B6B;
     --color-white: #FFFFFF;
 
-    --font-preset1: "Figtree Extra Bold", sans-serif;
-    --font-preset2: "Figtree Medium", sans-serif;
-    --font-preset3: "Figtree Medium", sans-serif;
-    --font-preset3-bold: "Figtree Extra Bold", sans-serif;
+    --font-preset1: "Figtree", sans-serif;
+    --font-preset2: "Figtree", sans-serif;
+    --font-preset3: "Figtree", sans-serif;
+    --font-preset3-bold: "Figtree", sans-serif;
 
 
     --font-size-preset1: 24px;
@@ -42,19 +42,22 @@ body {
     background-color: var(--color-yellow);
     color: var(--color-gray-500);
     letter-spacing: var(--letter-spacing);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container {
     background-color: var(--color-white);
     padding: var(--space-300);
-    width: fit-content;
     border-radius: 20px;
-    width: 384px;
-    height: auto;
-    min-height: 522px;
+    max-width: 384px;
+    max-height: 522px;
 }
 
-img {
+#image {
     display: block;
     border-radius: 10px;
     margin-bottom: 0px;
@@ -64,10 +67,10 @@ img {
     background-color: var(--color-yellow);
     color: var(--color-gray-950);
     font-family: var(--font-preset3-bold);
+    font-weight: 800;
     width: fit-content;
-    padding:  var(--space-50) var(--space-120);
+    padding: var(--space-50) var(--space-120);
     border-radius: var(--space-50);
-    font-weight: bold;
     margin: var(--space-120) 0;
     line-height: var(--line-height);
 }
@@ -75,13 +78,15 @@ img {
 #heading {
     font-family: var(--font-preset1);
     font-size: var(--font-size-preset1);
-    font-weight: bold;
+    font-weight: 800;
     color: var(--color-gray-950);
     margin: var(--space-120) 0;
     line-height: var(--line-height);
 }
+
 #date {
     font-family: var(--font-preset3);
+    font-weight: 500;
     color: var(--color-gray-950);
     margin: var(--space-120) 0;
     line-height: var(--line-height);
@@ -89,6 +94,7 @@ img {
 
 #text {
     font-family: var(--font-preset2);
+    font-weight: 500;
     color: var(--color-gray-500);
     margin: var(--space-120) 0;
     line-height: var(--line-height);
@@ -102,7 +108,7 @@ img {
 #name {
     color: var(--color-gray-950);
     font-family: var(--font-preset3-bold);
-    font-weight: bold;
+    font-weight: 800;
     line-height: var(--line-height);
 }
 
@@ -112,5 +118,89 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12px
+    gap: 12px;
 }
+
+@media (max-width: 768px) {
+    #container {
+        width: 327px;
+        max-height: 501px;
+        box-sizing: border-box;
+        padding: var(--space-300);
+        border-radius: 20px;
+        background-color: var(--color-white);
+    }
+
+    #image {
+        width: 279px;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+        border-radius: 10px;
+    }
+
+    #learn {
+        background-color: var(--color-yellow);
+        color: var(--color-gray-950);
+        font-family: var(--font-preset3-bold);
+        font-weight: 800;
+        width: fit-content;
+        padding: var(--space-50) var(--space-120);
+        border-radius: var(--space-50);
+        margin: var(--space-120) 0;
+        line-height: var(--line-height);
+        font-size: 12px;
+    }
+
+    #heading {
+        font-family: var(--font-preset1);
+        font-size: var(--font-size-preset1);
+        font-weight: 800;
+        color: var(--color-gray-950);
+        margin: var(--space-120) 0;
+        line-height: var(--line-height);
+        font-size: 20px;
+    }
+
+    #date {
+        font-family: var(--font-preset3);
+        font-weight: 500;
+        color: var(--color-gray-950);
+        margin: var(--space-120) 0;
+        line-height: var(--line-height);
+        font-size: 12px;
+    }
+
+    #text {
+        font-family: var(--font-preset2);
+        font-weight: 500;
+        color: var(--color-gray-500);
+        margin: var(--space-120) 0;
+        line-height: var(--line-height);
+        font-size: 14px;
+    }
+
+    #author img {
+        width: 32px;
+        height: 32px;
+    }
+
+    #name {
+        color: var(--color-gray-950);
+        font-family: var(--font-preset3-bold);
+        font-weight: 800;
+        line-height: var(--line-height);
+    }
+
+    #author {
+        width: fit-content;
+        height: 32px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+
+
