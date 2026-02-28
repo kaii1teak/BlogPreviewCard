@@ -55,6 +55,7 @@ body {
     border-radius: 20px;
     max-width: 384px;
     max-height: 522px;
+    box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
 }
 
 #image {
@@ -129,6 +130,7 @@ body {
         padding: var(--space-300);
         border-radius: 20px;
         background-color: var(--color-white);
+        box-shadow: 8px 8px 0px rgba(0, 0, 0, 1);
     }
 
     #image {
